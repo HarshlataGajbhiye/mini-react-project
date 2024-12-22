@@ -53,6 +53,8 @@ const messages = [
     "💪 JavaScript",
     "🤑 Learn React",
 ];
+ 
+//state is the memory of a component ,updating state will cause re-render
 function Card() {
     const [step, setStep] = useState(1);
     function minusStep() {
