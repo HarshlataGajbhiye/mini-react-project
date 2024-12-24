@@ -2,7 +2,7 @@ import Card from "./components/Card";
 import "./index.css";
 import TextExpander from "./components/TextExpander";
 import DateCounter from "./components/dateCounter";
-import StarRanting from "./components/StarRanting";
+import StarRating from "./components/StarRating";
 const appStyle = {
     display: "flex",
     alignItems: "center",
@@ -17,7 +17,11 @@ function App() {
             <Card />
             <TextExpander />
             <DateCounter />
-            <StarRanting />
+            <div>
+                <StarRating color="#be4bdb" defaultRating={3} size={5} />
+                <StarRating color="#ffd43b" defaultRating={4} size={6} />
+                <StarRating color="#40c057" defaultRating={5} size={9} />
+            </div>
         </div>
     );
 }
