@@ -1,12 +1,13 @@
 import Card from "./components/Card";
 import "./index.css";
 import TextExpander from "./components/TextExpander";
+import DateCounter from "./components/dateCounter";
 const appStyle = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
-    gap: "rrem",
+    gap: "1rem",
     padding: "4rem 0",
 };
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <div style={appStyle}>
             <Card />
             <TextExpander />
+            <DateCounter />
         </div>
     );
 }
