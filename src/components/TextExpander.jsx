@@ -4,12 +4,19 @@ const textStyle = {
     maxWidth: "40rem",
 };
 
-const showButton = {
-    backgroundColor: "#9C36B5",
-    color: "white",
+// const showButton = {
+//     backgroundColor: "#9C36B5",
+//     color: "white",
+//     border: "none",
+//     borderRadius: "1rem",
+//     padding: " 0.5rem  1rem",
+// };
+const btnStyle = {
     border: "none",
-    borderRadius: "1rem",
-    padding: " 0.5rem  1rem",
+    backgroundColor: "transparent",
+    marginLeft: "0.5rem",
+    color: "blue",
+    cursor: "pointer",
 };
 const rowText = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                 sequi autem optio ipsum sed cum incidunt, harum repellat dicta
@@ -19,6 +26,11 @@ const rowText = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
                 doloremque quia consectetur voluptatem perferendis, minus natus
                 aliquid mollitia quis autem id, iusto aspernatur vero laboriosam
                 quas? Quaerat non sapiente quos fugiat? Error, cum voluptates
+                explicabo eos fugit deleniti blanditiis vero. Quam nisi quod
+                facilis facere officiis. Rem, accusamus, corrupti dicta
+                necessitatibus ipsam sint adipisci doloribus perspiciatis
+                delectus quam quod esse, voluptatem ipsum dolor sit amet
+                consectetur adipisicing elit.  cum voluptates
                 explicabo eos fugit deleniti blanditiis vero. Quam nisi quod
                 facilis facere officiis. Rem, accusamus, corrupti dicta
                 necessitatibus ipsam sint adipisci doloribus perspiciatis
@@ -35,9 +47,10 @@ function TextExpander() {
     }
     return (
         <div style={textStyle}>
-            <p>{text} </p>
-            <button onClick={handleClick} style={showButton}>
-                {show ? "showless" : "showmore"}
+            <span>{text} </span>
+
+            <button onClick={handleClick} style={btnStyle}>
+                {show ? `show less` : `...show more`}
             </button>
         </div>
     );

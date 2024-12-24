@@ -2,6 +2,7 @@ import Card from "./components/Card";
 import "./index.css";
 import TextExpander from "./components/TextExpander";
 import DateCounter from "./components/dateCounter";
+import StarRanting from "./components/StarRanting";
 const appStyle = {
     display: "flex",
     alignItems: "center",
@@ -16,6 +17,7 @@ function App() {
             <Card />
             <TextExpander />
             <DateCounter />
+            <StarRanting />
         </div>
     );
 }
